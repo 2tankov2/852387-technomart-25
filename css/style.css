@@ -72,6 +72,7 @@ a {
     line-height: 17px;
     color: #ffffff;
 
+
   }
 
 .main-user {
@@ -132,7 +133,7 @@ a {
     font-weight: normal;
     color: #ffffff;
     padding: 20px 30px;
-    box-shadow: inset 0px -5px 0 0 #293449;
+
 
   }
 
@@ -150,7 +151,7 @@ a {
 
 
 
-.user-navigation a {
+.user a {
     color: #000000;
 }
 
@@ -160,9 +161,10 @@ a {
   background-color: #1d2739;
 }
 
-.user-navigation a:hover,
-.user-navigation a:focus {
+.user a:hover,
+.user a:focus {
     color: #ee3643;
+    fill: #32425C;
 }
 
 .main-user a:hover,
@@ -252,21 +254,27 @@ a.order:active {
 }
 
 .tel {
-
-    font-size: 21px;
-    font-weight: normal;
+  position: relative;
+  font-size: 21px;
+  font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1;
   letter-spacing: normal;
 
-    color: #ee3643;
-    border: solid 3px #ffffff;
-    margin-top: 6px;
-    margin-bottom: 0;
+  color: #ee3643;
+  border: solid 3px #ffffff;
+  margin-top: 6px;
+  margin-bottom: 0;
 
-    padding: 9px 10px 9px 45px;
+  padding: 9px 10px 9px 45px;
 
+}
+
+.tel::before {
+  content: url("../img/icon-phone.svg");
+  position: absolute;
+  left: 16px;
 }
 
 .our-address {
@@ -396,7 +404,7 @@ a.order:active {
 
 
 .main-navigation {
-
+    width: 100%;
     list-style: none;
 
   }
@@ -405,7 +413,7 @@ a.order:active {
     width: 100%;
     display: flex;
     justify-content:flex-start;
-
+    flex-grow: 0;
     margin: 0;
     padding: 0;
     margin-bottom: 26px;
@@ -428,7 +436,8 @@ a.order:active {
   flex-direction: row;
   padding: 0;
   justify-content: flex-end;
-  margin-left: 50px;
+  margin-left: 74px;
+  margin-right: 0;
 }
 
 .user li {
@@ -438,10 +447,24 @@ a.order:active {
   font-stretch: normal;
   line-height: 1;
   letter-spacing: normal;
+  margin-right: 0;
 }
 
-.user li:first-child {
-  margin-right: 60px;
+.user a {
+  padding: 10px 25px 11px 24px;
+  background-color: #ffffff;
+}
+
+.user .login-link {
+  position: relative;
+  padding-left: 48px;
+  margin-right: 10px;
+}
+
+.user svg {
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 
 .main-with-logo {
@@ -453,12 +476,14 @@ a.order:active {
 
 .site-navigation {
     display: flex;
+    justify-content: space-between;
     margin: 0px;
     padding: 0px;
     min-height: 60px;
     background-color: #32425c;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 23px;
+    padding-right: 24px;
+    box-shadow: inset 0px -5px 0 0 #293449;
 
 }
 
