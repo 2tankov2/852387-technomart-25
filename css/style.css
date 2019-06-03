@@ -164,7 +164,21 @@ a {
 .user a:hover,
 .user a:focus {
     color: #ee3643;
-    fill: #32425C;
+
+}
+
+.user a:hover path,
+.user a:focus path{
+  fill: #32425C;
+}
+
+.user a:active {
+    opacity: 0.3;
+    color: #000000;
+}
+
+.user a:active path {
+  fill: #000000;
 }
 
 .main-user a:hover,
