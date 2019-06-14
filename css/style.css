@@ -619,10 +619,10 @@ a.order:active {
 }
 
 .container {
-    width: 940px;
-    margin: 0 auto;
-    padding: 0;
-    font-family: "Cuprum";
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Cuprum";
   font-size: 17px;
   line-height: 1.06;
 
@@ -932,6 +932,7 @@ a.order:active {
   padding: 0;
   list-style: none;
   width: 1100px;
+  margin-bottom: 53px;
 }
 
 .promo__item {
@@ -1137,13 +1138,13 @@ a.order:active {
 }
 
 .slider-item:nth-child(1) {
-  background-image: url(../img/slide-tools-2.png);
+  background-image: url(../img/slide-tools-1.png);
   background-repeat: no-repeat;
-  background-position: 93% 18px;
+  background-position: 100% 0;
 }
 
-.slider-item:nth-child(1) {
-  background-image: url(../img/slide-tools-1.png);
+.slider-item:nth-child(2) {
+  background-image: url(../img/slide-tools-2.png);
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
@@ -1156,6 +1157,7 @@ a.order:active {
   line-height: 1;
   font-weight: bold;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .slider-item p {
@@ -1165,6 +1167,7 @@ a.order:active {
   margin: 0;
   margin-left: 26px;
   margin-bottom: 122px;
+  color: #ffffff;
 }
 
 .slider-item-button {
@@ -1174,3 +1177,30 @@ a.order:active {
   margin-left: 26px;
 }
 
+
+.popular-wapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f9f5f0;
+}
+
+.popular-title {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1;
+  margin-top: 30px;
+  margin-bottom: 28px;
+  margin-left: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.popular-button {
+  width: 253px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  margin-top: 25px;
+  margin-bottom: 26px;
+  margin-right: 23px;
+}
