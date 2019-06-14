@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -34,8 +32,8 @@
               <h1 class="info">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
               <div class="contact-wapper">
-                <p class="tel">+7(812)555-05-55</p>
-                <p class="our-address">г.Санкт-Петербург, улюБ.Конюшенная, д.19/8</p>
+                <p class="tel">+7 (812) 555-05-55</p>
+                <p class="our-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               </div>
 
               <div class="navigation-contaner">
@@ -85,6 +83,27 @@
               <h2 class="visually-hidden">Фильтр товаров</h2>
 
               <form class="filter" method="get" action="http://echo.htmlacademy.ru">
+
+                <fieldset>
+                  <legend>Цена:</legend>
+                  <div class="filter-container">
+                    <div class="filter-range-wrapper">
+                      <div class="filter-range">
+                        <div class="filter-range-scale">
+                          <div class="filter-range-bar"></div>
+                        </div>
+                        <button class="filter-range-handle min"></button>
+                        <button class="filter-range-handle max"></button>
+                      </div>
+                    </div>
+
+                    <div class="filter-interval">
+                      <label>От <input type="text" name="min-interval" value="0"></label>
+                      <label>До <input type="text" name="max-interval" value="15000"></label>
+                    </div>
+                  </div>
+                </fieldset>
+
                 <fieldset>
                   <legend>Производители:</legend>
                   <ul>
