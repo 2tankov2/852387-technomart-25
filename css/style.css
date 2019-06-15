@@ -667,6 +667,7 @@ a.order:active {
   .catalog-items {
     width: 700px;
     margin: 20px auto;
+    margin-bottom: 0;
   }
 
   .catalog-item {
@@ -704,7 +705,14 @@ a.order:active {
   }
 
   .catalog-item {
-    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.11;
+    letter-spacing: normal;
+    text-align: center;
+    font-style: normal;
+    font-stretch: normal;
   }
 
   .catalog-item .flag {
@@ -785,15 +793,18 @@ a.order:active {
 
 .catalog-item .title {
   min-height: 40px;
-  padding: 0 25px;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  padding: 0 25px 0 25px;
+  margin-top: 11px;
+  margin-bottom: 11px;
 }
 
 .catalog-item .discount {
+  font-size: 17px;
+  line-height: 1.06;
   min-height: 20px;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  margin-left: 9px;
 
   color: #999;
   text-decoration: line-through;
@@ -801,8 +812,11 @@ a.order:active {
 
 .catalog-item .price {
   position: relative;
+  font-size: 17px;
+  line-height: 1.06;
   width: 80px;
-  margin: 10px auto;
+  margin-top: 8px;
+  margin-left: 43px;
   margin-bottom: 20px;
   padding: 10px 30px;
 
@@ -1239,3 +1253,48 @@ a.order:active {
   margin-bottom: 26px;
   margin-right: 23px;
 }
+
+.brands-list-items {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin-top: 21px;
+  margin-bottom: 65px;
+}
+
+.brands-item {
+  width: 218px;
+  height: 143px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #eaeaea;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.brands-item:nth-child(4),
+.brands-item:nth-child(8) {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.brands-item:nth-child(4) a {
+  padding-bottom: 12px;
+}
+
+.brands-item:nth-child(5) a {
+  padding-top: 5px;
+  padding-left: 8px;
+}
+
+.brands-item:nth-child(8) a {
+  padding-bottom: 5px;
+  padding-left: 6px;
+}
+
