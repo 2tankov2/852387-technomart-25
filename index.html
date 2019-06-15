@@ -88,9 +88,19 @@
           <!-- ===== SLIDER ===== -->
           <li class="promo__item slider">
             <h3 class="visually-hidden">Виды товаров (слайдер)</h3>
+            <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+            <input class="visually-hidden" type="radio" id="product-2" name="toggle">
             <div class="slider-controls">
-                <i class="active"></i>
-                <i></i>
+              <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+              <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+            </div>
+            <div class="slider-toggle">
+              <button class="toggle buton-back" type="button">
+                <span class="visually-hidden">Назад</span>
+              </button>
+              <button class="toggle button-next" type="button">
+                <span class="visually-hidden">Вперед</span>
+              </button>
             </div>
             <ul class="slider-list">
               <li class="slider-item">

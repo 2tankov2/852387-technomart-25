@@ -1077,7 +1077,7 @@ a.order:active {
   transform: translateX(-50%);
 }
 
-.slider-controls i {
+.slider-controls label {
   position: relative;
 
   display: inline-block;
@@ -1089,7 +1089,7 @@ a.order:active {
   cursor: pointer;
 }
 
-.slider-controls i::after {
+.slider-controls label::after {
   content: "";
 
   position: absolute;
@@ -1102,22 +1102,6 @@ a.order:active {
 
   background: #ffffff;
 
-  border-radius: 50%;
-}
-
-.slider-controls .active::before {
-  content: "";
-
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 2;
-
-  width: 6px;
-  height: 6px;
-  margin: 0;
-
-  background-color: red;
   border-radius: 50%;
 }
 
@@ -1134,10 +1118,6 @@ a.order:active {
 }
 
 .slider-item:nth-child(1) {
-  display: block;
-}
-
-.slider-item:nth-child(1) {
   background-image: url(../img/slide-tools-1.png);
   background-repeat: no-repeat;
   background-position: 100% 0;
@@ -1147,6 +1127,31 @@ a.order:active {
   background-image: url(../img/slide-tools-2.png);
   background-repeat: no-repeat;
   background-position: 100% 0;
+}
+
+#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: block;
+}
+
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+
+  width: 6px;
+  height: 6px;
+  margin: 0;
+
+  background-color: red;
+  border-radius: 50%;
 }
 
 .slider-item h3 {
@@ -1175,6 +1180,36 @@ a.order:active {
   padding-top: 11px;
   padding-bottom: 9px;
   margin-left: 26px;
+}
+
+.slider-toggle {
+  position: absolute;
+  width: 580px;
+  left: 27px;
+  bottom: 112px;
+  z-index: 100;
+}
+
+.toggle {
+  position: relative;
+  width: 22px;
+  height: 40px;
+  border-color: #ee3643;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+}
+
+.button-back {
+  position: absolute;
+  background-image: url(../img/icon-left.svg);
+
+}
+
+.button-next {
+  position: absolute;
+  background-image: url(../img/icon-right.svg);
+  right: 5px;
 }
 
 
