@@ -816,7 +816,7 @@ a.order:active {
   .headline-filter p,
   .headline-sort p,
   .sort-list {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     margin-top: 12px;
   }
 
@@ -852,14 +852,21 @@ a.order:active {
 
   .sort-list li:first-child {
     margin-right: 71px;
+    color: #ee3643;
   }
 
   .sort-list li:nth-child(2) {
+    height: 14px;
     margin-right: 65px;
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px dotted #ee3643;
   }
 
   .sort-list li:nth-child(3) {
+    height: 14px;
     margin-right: 46px;
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px dotted #ee3643;
   }
 
   .sort-list li:nth-child(4) {
