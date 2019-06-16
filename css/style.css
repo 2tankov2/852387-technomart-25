@@ -74,7 +74,6 @@ a {
 
 .main-header {
     background-color: #f4f7f9;
-    margin-bottom: 59px;
 }
 
 .main-navigation {
@@ -593,6 +592,10 @@ a.order:active {
     font-family: "Cuprum", sans-serif;
 }
 
+.main-container {
+  margin-top: 59px;
+}
+
 .main-footer {
     display:flex;
     flex-direction: column;
@@ -737,12 +740,58 @@ a.order:active {
   }
 
   .breadcrumbs {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    margin-bottom: 25px;
+    margin-top: 23px;
+    margin-bottom: 19px;
 
-    /* Временно для сетки */
-    min-height: 13px;
+    list-style-type: none;
+  }
+
+  .breadcrumbs li {
+    position: relative;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.38;
+    text-transform: uppercase;
+
+    margin-right: 41px;
+    color: #000000;
+  }
+
+  .breadcrumbs li:last-child {
+    margin-right: 0;
+  }
+
+  .breadcrumbs li::after {
+    content: url(../img/icon-right-small.svg);
+
+    position: absolute;
+    top: 1px;
+    right: -23px;
+
+    width: 8px;
+    height: 8px;
+
+
+  }
+
+  .breadcrumbs a {
+    color: #000000;
+  }
+
+  .breadcrumbs li:last-child::after {
+    display: none;
+  }
+
+  .title-wapper {
+    width: 100%;
+    background-color: #f2f6f8;
   }
 
   .filters {
