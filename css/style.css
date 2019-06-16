@@ -450,6 +450,7 @@ a.order:active {
 
 .button-social:active {
     color: #ee3643;
+    text-decoration: none;
 }
 
 .footer-social {
@@ -656,6 +657,7 @@ a.order:active {
    width: 325px;
    padding-left: 5px;
    padding-top: 10px;
+   color: #f3f7f9;
  }
 
 .footer-social {
@@ -853,8 +855,6 @@ a.order:active {
   padding: 7px 0;
 
   background-color: #63a63e;
-  border: 3px solid #63a63e;
-  border-bottom-color: #367315;
   border-radius:3px;
 
   color: white;
@@ -866,14 +866,43 @@ a.order:active {
   text-transform: uppercase;
 }
 
+.catalog-item .actions .buy {
+  width: 135px;
+  box-shadow: inset 0px -3px 0 0 #367315;
+  padding: 10px 0;
+}
+
+.catalog-item .actions .buy:hover,
+.catalog-item .actions .buy:focus {
+  background-color: #5fbb2d;
+}
+
+.catalog-item .actions .buy:active {
+  background-color: #518534;
+}
+
 .catalog-item .actions .bookmark {
   color: #32425c;
   background: white;
-  border-bottom-color: #63a63e;
+  border: 3px solid #63a63e;
+}
+
+.catalog-item .actions .bookmark:hover,
+.catalog-item .actions .bookmark:focus {
+  border: solid 3px #32425c;
+}
+
+.catalog-item .actions .bookmark:active {
+  opacity: 0.3;
 }
 
 .catalog-item .actions {
   display: none;
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .catalog-item:hover .actions {
@@ -1163,6 +1192,15 @@ a.order:active {
 
 }
 
+.promo__link:hover,
+.promo__link:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.promo__link:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .promo__link span {
   font-size: 14px;
   font-weight: normal;
@@ -1298,7 +1336,7 @@ a.order:active {
   position: absolute;
   width: 580px;
   left: 27px;
-  bottom: 112px;
+  bottom: 152px;
   z-index: 100;
 }
 
@@ -1306,7 +1344,7 @@ a.order:active {
   position: relative;
   width: 22px;
   height: 40px;
-  border-color: #ee3643;
+  border: none;
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
@@ -1395,6 +1433,16 @@ a.order:active {
   padding-left: 6px;
 }
 
+.brands-item:hover,
+.brands-item:focus {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.brands-item:active {
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+  opacity: 0.3;
+}
+
 .service-wapper {
   width: 100%;
   background-color: #f4f7f9;
@@ -1458,6 +1506,11 @@ a.order:active {
   padding-bottom: 16px;
   background-color: #32425c;
   box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+}
+
+.service-item:hover,
+.service-item:focus {
+  background-color: #293449;
 }
 
 .service-item--active {
