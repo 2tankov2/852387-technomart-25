@@ -983,7 +983,6 @@ a.order:active {
 .filter-container {
   margin: 0 auto;
   padding: 25px;
-  width: 300px;
   border: 2px solid #eeeeee;
   border-radius: 3px;
 }
@@ -1602,4 +1601,8 @@ a.order:active {
 
 .credit-content {
   display: none;
+}
+
+.tools-info .container {
+  flex-direction: column;
 }
