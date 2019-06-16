@@ -436,9 +436,11 @@ a.order:active {
     text-decoration: none;
 }
 
+
 .footer-navigation-addition a:hover,
 .footer-navigation-addition a:focus,
-.button-social {
+.button-social:hover,
+.button-social:focus {
     text-decoration: underline;
 }
 
@@ -599,26 +601,21 @@ a.order:active {
 .footer-container {
     width: 100%;
     background-color: #32425c;
-
  }
 
  .footer-items {
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: auto;
-
-    /* Временно для сетки */
-    min-height: 200px;
+   width: 100%;
+   font-family: "Cuprum", sans-serif;
+   font-size: 18px;
+   line-height: 1.33;
+   margin-bottom: 33px;
  }
 
- .main-footer-logo {
-     width: 220px;
-     height: 68px;
-     text-align: center;
-     line-height: 68px;
+.main-footer-logo {
+  width: 220px;
+  text-align: center;
+  padding-bottom: 19px;
+  padding-top: 20px;
 
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
@@ -628,41 +625,98 @@ a.order:active {
  .footer-navigation, .footer-navigation-addition {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 600px;
-    padding-top: 42px;
-    font-family: "Cuprum", sans-serif;
-    font-size: 18px;
+    justify-content: space-between;
+    padding-left: 0;
     margin: 0;
 
     list-style: none;
 }
 
- .footer-main-with-logo, .footer-item-container {
-    display: flex;
-    flex-direction: center;
-    justify-content: space-around;
+.footer-navigation {
+  width: 546px;
+  padding-top: 38px;
+}
 
-    margin: auto;
+.footer-navigation-addition {
+  width: 524px;
+  padding-top: 28px;
+}
+
+ .footer-main-with-logo {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .footer-item-container {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .footer-contacts {
+   width: 325px;
+   padding-left: 5px;
+   padding-top: 10px;
  }
 
 .footer-social {
-
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    margin:  auto;
+    justify-content: flex-start;
+
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.13;
+    text-align: left;
+
+    margin-top: 21px;
+    margin-bottom: 18px;
  }
 
- .footer-social-items {
-    width: 150px;
-    display: flex;
-    justify-content: space-between;
+ .footer-social-info {
+   width: 230px;
+   margin-left: 2px;
+ }
+
+.footer-social-items {
+  width: 133px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 14px;
+  margin-right: 120px;
+  margin-left: 158px;
+  padding: 0;
+
+  list-style: none;
 }
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #212a3a;
+}
+
+.social-btn:hover,
+.social-btn:focus,
+.social-btn:active {
+  background-color: #ee3643;
+}
+
 
 .footer-copyright {
     width: 285px;
     display: flex;
     justify-content: space-between;
+}
+
+.footer-copyright p {
+  margin-bottom: 0;
 }
 
 .container {
@@ -678,9 +732,6 @@ a.order:active {
 
 .page-title {
     margin-bottom: 20px;
-
-    /* Временно для сетки */
-    min-height: 89px;
   }
 
   .breadcrumbs {
