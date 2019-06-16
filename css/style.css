@@ -777,8 +777,6 @@ a.order:active {
 
     width: 8px;
     height: 8px;
-
-
   }
 
   .breadcrumbs a {
@@ -792,6 +790,80 @@ a.order:active {
   .title-wapper {
     width: 100%;
     background-color: #f2f6f8;
+  }
+
+.headline {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.38;
+  text-transform: uppercase;
+
+  margin: 0;
+  margin-top: 21px;
+  padding: 0;
+}
+
+  .headline-filter,
+  .headline-sort {
+    background-color: #f7f3ec;
+  }
+
+  .headline-filter p,
+  .headline-sort p,
+  .sort-list {
+    margin-bottom: 10px;
+    margin-top: 12px;
+  }
+
+  .headline-filter p,
+  .headline-sort p {
+    margin-left: 19px;
+  }
+
+  .headline-sort p {
+    margin-right: 139px;
+  }
+
+  .headline-filter {
+    width: 220px;
+  }
+
+  .headline-sort {
+    width: 700;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .sort-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    margin-right: 17px;
+    padding: 0;
+
+    list-style-type: none;
+  }
+
+  .sort-list li:first-child {
+    margin-right: 71px;
+  }
+
+  .sort-list li:nth-child(2) {
+    margin-right: 65px;
+  }
+
+  .sort-list li:nth-child(3) {
+    margin-right: 46px;
+  }
+
+  .sort-list li:nth-child(4) {
+    margin-right: 21px;
   }
 
   .filters {
