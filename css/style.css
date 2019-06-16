@@ -330,13 +330,60 @@ a.order:active {
 .transport-companies-list {
     list-style: none;
     font-size: 18px;
-    line-height: 20px;
+    font-weight: normal;
+    line-height: 1.11;
+    padding-left: 37px;
+    margin-top: 0;
+}
+
+.transport-companies-list li {
+  padding-top: 21px;
+  position: relative;
+}
+
+.transport-companies-list li::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  left: -36px;
+  top: 29px;
+  border: 1px solid #ee3643;
 }
 
 .index-columns h2 {
     font-size: 30px;
-    line-height: 30px;
+    line-height: 1;
+    font-family: Cuprum;
+    font-weight: normal;
     text-transform: uppercase;
+    padding-left: 2px;
+    margin-bottom: 15px;
+}
+
+.index-columns p {
+  font-family: PT Sans, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.85;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  padding-top: 11px;
+  padding-left: 2px;
+  margin-bottom: 0;
+}
+
+.contacts p {
+  padding-right: 80px;
+  margin-bottom: 31px;
+}
+
+.contacts-button {
+  width: 300px;
+  margin-top: 36px;
+  margin-left: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .contacts-item input {
@@ -517,35 +564,35 @@ a.order:active {
 }
 
 .index-columns {
-
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-between;
+    margin-top: 54px;
     margin-bottom: 86px;
 }
 
 .about-us {
-    width: 519px;
-
-
+    width: 521px;
     font-family: "Cuprum", sans-serif;
+}
 
-    /* Временно для сетки */
-    min-height: 370px;
+.aboutus-button {
+  width: 220px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 37px;
+  margin-left: 1px;
+  margin-right: 40px;
 }
 
 .contacts {
     width: 300px;
     font-family: "Cuprum", sans-serif;
-
-    /* Временно для сетки */
-    min-height: 370px;
 }
 
 .main-footer {
     display:flex;
     flex-direction: column;
-    margin-top: 70px;
 }
 
 
@@ -1401,10 +1448,6 @@ a.order:active {
   padding-right: 340px;
 }
 
-.delivery-content {
-  display: none;
-}
-
 .delivery-content::before {
   content: url(../img/delivery.png);
   position: absolute;
@@ -1442,11 +1485,15 @@ a.order:active {
   margin-right: 385px;
 }
 
+.delivery-content {
+  display: block;
+}
+
 .assurance-content {
   display: none;
 }
 
 
 .credit-content {
-  display: block;
+  display: none;
 }
