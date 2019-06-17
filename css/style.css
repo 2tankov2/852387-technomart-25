@@ -850,34 +850,69 @@ a.order:active {
     list-style-type: none;
   }
 
-  .sort-list li:first-child {
+  .sort-list li:first-child  a {
     margin-right: 71px;
     color: #ee3643;
   }
 
-  .sort-list li:nth-child(2) {
+  .sort-list li:nth-child(2) a {
     height: 14px;
     margin-right: 65px;
-    color: rgba(0, 0, 0, 0.3);
-    border-bottom: 1px dotted #ee3643;
   }
 
-  .sort-list li:nth-child(3) {
+  .sort-list li:nth-child(3) a {
     height: 14px;
     margin-right: 46px;
-    color: rgba(0, 0, 0, 0.3);
-    border-bottom: 1px dotted #ee3643;
   }
 
   .sort-list li:nth-child(4) {
     margin-right: 21px;
   }
 
+  .sort-list--link {
+    border-bottom: 1px dotted #ee3643;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .sort-list--link:hover,
+  .sort-list--link:focus {
+    color: #000000;
+    border-bottom: 1px solid #ee3643;
+  }
+
+  .link--active,
+  .link--active:hover,
+  .link--active:focus,
+  .link--active:active {
+    color: #ee3643;
+    border: none;
+  }
+
+  .arrow svg:hover,
+  .arrow svg:focus {
+    fill: #000000;
+  }
+
   .filters {
     width: 220px;
+  }
 
-    /* Временно для сетки */
-    min-height: 700px;
+  .filter fieldset {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 23px;
+    margin-top: 12px;
+    border: none;
+    border-bottom: 1px solid #f7f3ec;
+    margin-right: 0;
+  }
+
+  .filter legend {
+  font-family: 'PT Sans';
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.76;
+  text-transform: uppercase;
   }
 
   .catalog {
@@ -1161,15 +1196,10 @@ a.order:active {
   display: none;
 }
 
-.filter-container {
-  margin: 0 auto;
-  padding: 25px;
-  border: 2px solid #eeeeee;
-  border-radius: 3px;
-}
 
 .filter-range-wrapper {
-  margin-bottom: 10px;
+  margin-top: 8px;
+  margin-bottom: 9px;
   padding: 39px 18px;
   border-radius: 3px;
   background-color: #eeeeee;
@@ -1219,20 +1249,8 @@ a.order:active {
   justify-content: space-between;
 }
 
-.filter-interval label {
-  width: 50%;
-  font-size: 16px;
-  line-height: 22px;
-  text-transform: uppercase;
-}
-
-.filter-interval label:last-child {
-  text-align: right;
-}
-
 .filter-interval input {
-  margin-left: 8px;
-  width: 80px;
+  width: 95px;
   height: 38px;
   border-radius: 2px;
   border: none;
@@ -1240,6 +1258,16 @@ a.order:active {
   color: inherit;
   text-align: center;
   background-color: #eeeeee;
+
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.06;
+}
+
+.filter-interval span {
+  padding-top:11px;
+  color: #444444;
 }
 
 .promo__list {

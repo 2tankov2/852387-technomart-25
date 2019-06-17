@@ -99,20 +99,24 @@
             <div class="headline-sort">
               <p>Сортировка:</p>
               <ul class="sort-list">
-                <li>По цене</li>
-                <li>По типу</li>
-                <li>По функционалу</li>
+                <li><a class="sort-list--link link--active" href="#">По цене</a></li>
+                <li><a class="sort-list--link" href="#">По типу</a></li>
+                <li><a class="sort-list--link" href="#">По функционалу</a></li>
                 <li>
-                  <span class="visually-hidden">min</span>
-                  <svg width="11" height="10">
-                    <polygon points="0,10 6,0 11,10" fill="red"/>
-                  </svg>
+                  <a class="arrow" href="#">
+                    <span class="visually-hidden">min</span>
+                    <svg width='11' height='10' fill="#ee3643">
+                      <polygon points="0,10 6,0 11,10" />
+                    </svg>
+                  </a>
                 </li>
                 <li>
-                  <span class="visually-hidden">max</span>
-                  <svg width="11" height="10">
-                    <polygon points="11,0 6,10 0,0" fill="red"/>
-                  </svg>
+                  <a class="arrow" href="#">
+                    <span class="visually-hidden">max</span>
+                    <svg width='11' height='10' fill="#c5c5c5">
+                        <polygon points="11,0 6,10 0,0" />
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -129,7 +133,7 @@
 
                 <fieldset>
                   <legend>Цена:</legend>
-                  <div class="filter-container">
+
                     <div class="filter-range-wrapper">
                       <div class="filter-range">
                         <div class="filter-range-scale">
@@ -141,13 +145,14 @@
                     </div>
 
                     <div class="filter-interval">
-                      <label>От <input type="text" name="min-interval" value="0"></label>
-                      <label>До <input type="text" name="max-interval" value="15000"></label>
+                      <input type="text" name="min-interval" value="0">
+                      <span>—</span>
+                      <input type="text" name="max-interval" value="30000">
                     </div>
-                  </div>
+
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="filter-brands">
                   <legend>Производители:</legend>
                   <ul>
                     <li class="filter-option">
@@ -177,7 +182,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-power">
                 <legend>Питание:</legend>
                 <ul>
                   <li class="filter-option">
