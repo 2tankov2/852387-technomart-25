@@ -897,11 +897,14 @@ a.order:active {
     width: 220px;
   }
 
+  .filter {
+    margin-top: 12px;
+  }
+
   .filter fieldset {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 23px;
-    margin-top: 12px;
     border: none;
     border-bottom: 1px solid #f7f3ec;
     margin-right: 0;
@@ -914,6 +917,142 @@ a.order:active {
   line-height: 1.76;
   text-transform: uppercase;
   }
+
+.filter .filter-brands {
+  margin-top: 17px;
+  padding-bottom: 0;
+}
+
+.filter-brands ul,
+.filter-power ul {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.33;
+  text-transform: uppercase;
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-brands legend,
+.filter-power legend {
+  margin-bottom: 9px;
+}
+
+.filter-option {
+  margin-bottom:21px;
+  padding-left: 34px;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -3px;
+
+  width: 19px;
+  height: 19px;
+
+  border: 2px solid #c5c5c5;
+  border-radius: 3px;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: -6px;
+  left: -27px;
+
+  width: 10px;
+  height: 16px;
+
+  border-radius: 1px;
+  border-left: 4px solid #c5c5c5;
+  border-bottom: 4px solid #c5c5c5;
+  transform: scale(-1, 1) rotate(-45deg);
+
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #b5b5b5;
+}
+
+.filter-input:disabled + label {
+  opacity: 0.3;
+}
+
+.filter .filter-power {
+  margin-top: 19px;
+  border-bottom: none;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+
+  position: absolute;
+  top: -3px;
+  left: -36px;
+
+  width: 17px;
+  height: 17px;
+
+  border: 4px solid #c5c5c5;
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  left: -29px;
+
+  width: 10px;
+  height: 10px;
+
+  background-color: #c5c5c5;
+  border-radius: 50%;
+}
+
+.filter-button {
+  width: 140px;
+
+  padding-top: 12px;
+  padding-bottom: 7px;
+  margin-top: 34px;
+  background-color: #ffffff;
+  border: solid 1px #e5e5e5;
+  color: #000000;
+
+  font-family: 'PT Sans';
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.38;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  border-color: #bdc6ca;
+  background-color: #ffffff;
+}
+
+.filter-button:active {
+  border-color: #ee3643;
+  background-color: #ffffff;
+}
 
   .catalog {
     width: 700px;
