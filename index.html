@@ -389,34 +389,39 @@
     </footer>
 
     <!--Модальное окно карты-->
-    <section class="modal-map">
-        <p>
-          <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map.jpg" width="940" height="446" alt="Офис компании по адресу
           ул.Большая Конюшенная 19/8, Санкт-Петербург">
-        </p>
-        <button class="modal-close button" type="button">Закрыть</button>
-        </section>
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
         <!---X--->
 
           <!--Модальное окно обратной связи-->
-      <section class="modal">
+    <section class="modal modal-contacts">
       <form class="contacts-form" action="http://echo.htmlacademy.ru" method="post">
-        <p class="contacts-item">
-          <label for="contacts-name">Ваше имя:</label>
-          <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-        </p>
-        <p class="contacts-item">
-          <label for="contacts-email">Ваш e-mail:</label>
-          <input id="contacts-email" type="text" name="email" value="" placeholder="email@example.com">
-        </p>
+        <div class="contacts-form-wapper">
+          <p class="contacts-item">
+            <label for="contacts-name">Ваше имя:</label>
+            <input id="contacts-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="contacts-item">
+            <label for="contacts-email">Ваш e-mail:</label>
+            <input id="contacts-email" type="text" name="email" value="" placeholder="email@example.com">
+          </p>
+        </div>
         <p class="contacts-item">
           <label for="contacts-text">Текст письма:</label>
-          <textarea id="contacts-text" rows="10" placeholder="В свободной форме"></textarea>
+          <textarea id="contacts-text" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="button" type="submit">Отправить</button>
+        <div class="button-wapper">
+          <button class="button button-contacts" type="submit">Отправить</button>
+        </div>
         <button class="modal-close" type="button">Закрыть</button>
       </form>
-      </section>
+    </section>
         <!--X--------------->
   </body>
 </html>
