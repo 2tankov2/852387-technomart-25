@@ -4,7 +4,7 @@ var link = document.querySelector(".contacts-button");
 
 var popup = document.querySelector(".modal-contacts");
 if  (popup) {
-var close = popup.querySelector(".modal-close");
+var btnClose = popup.querySelector(".modal-close");
 
 var form = popup.querySelector("form");
 var login = popup.querySelector("[name=name]");
@@ -33,14 +33,15 @@ link.addEventListener("click", function (evt) {
 });
 }
 
-if (close) {
-  close.addEventListener("click", function (evt) {
+if (btnClose) {
+  btnClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
     popup.classList.remote("modal-error");
   });
 }
 
+if (form) {
 form.addEventListener("submit", function (evt) {
   if (!login.value || !email.value) {
     evt.preventDefault();
@@ -53,6 +54,7 @@ form.addEventListener("submit", function (evt) {
       }
   }
 });
+}
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
@@ -67,17 +69,22 @@ window.addEventListener("keydown", function (evt) {
 var mapLink = document.querySelector(".map-button");
 
 var mapPopup = document.querySelector(".modal-map");
+if (mapClose) {
 var mapClose = mapPopup.querySelector(".modal-close");
-
+}
+if (mapLink) {
 mapLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   mapPopup.classList.add("modal-show");
 });
+}
 
+if (mapClose) {
 mapClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   mapPopup.classList.remove("modal-show");
 });
+}
 
 var buyLink = document.querySelectorAll(".buy");
 
@@ -102,7 +109,7 @@ var buttonServices = document.querySelectorAll(".service-item");
 
 var contentServices = document.querySelectorAll(".service-content");
 
-
+if (buttonServices[i]) {
 buttonServices[0].addEventListener("click", function (evt) {
   //сброс для всех
   for (var j=0; j<buttonServices.length; j++) {
@@ -136,4 +143,4 @@ buttonServices[2].addEventListener("click", function (evt) {
    buttonServices[2].classList.add("service-item--active");
    contentServices[2].classList.remove("slider-item--close");
 });
-
+}
