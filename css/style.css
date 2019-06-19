@@ -1730,6 +1730,10 @@ a.order:active {
   list-style: none;
 }
 
+.slider-item--show {
+  display: block;
+}
+
 .slider-item {
   display: none;
   padding: 22px 0 23px 0;
@@ -1805,7 +1809,7 @@ a.order:active {
   width: 580px;
   left: 27px;
   bottom: 152px;
-  z-index: 100;
+  z-index: 10;
 }
 
 .toggle {
@@ -2001,6 +2005,10 @@ a.order:active {
   padding-top: 13px;
 }
 
+.slider-item--close {
+  display: none;
+}
+
 .service-content h3 {
   margin: 0;
   padding-bottom: 12px;
@@ -2057,19 +2065,6 @@ a.order:active {
   padding-top: 12px;
   padding-bottom: 10px;
   margin-right: 385px;
-}
-
-.delivery-content {
-  display: block;
-}
-
-.assurance-content {
-  display: none;
-}
-
-
-.credit-content {
-  display: none;
 }
 
 .tools-info .container {
