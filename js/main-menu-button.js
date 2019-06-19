@@ -74,15 +74,6 @@ mapClose.addEventListener("click", function (evt) {
   mapPopup.classList.remove("modal-show");
 });
 
-window.addEventListener("keydown", function (evt) {
-  evt.preventDefault();
-  if (evt.keyCode === 27) {
-    if (mapPopup.classList.contains("modal-show")) {
-      mapPopup.classList.remove("modal-show");
-    }
-  }
-});
-
 var buyLink = document.querySelectorAll(".buy");
 
 var buyPopup = document.querySelector(".modal-cart-form");
