@@ -1973,6 +1973,8 @@ a.order:active {
   line-height: 1.43;
   color: #ffffff;
 
+  cursor: pointer;
+
   padding-left: 23px;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -1991,6 +1993,10 @@ a.order:active {
   color: #32425c;
   background-color: #ffffff;
   box-shadow: 0px 1px 0 0 #ffffff, inset 0.6px 0.8px 0 0 #ffffff;
+}
+
+.service-item.service-item--active {
+  cursor: default;
 }
 
 .service-contents {

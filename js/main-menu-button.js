@@ -3,12 +3,13 @@
 var link = document.querySelector(".contacts-button");
 
 var popup = document.querySelector(".modal-contacts");
+if  (popup) {
 var close = popup.querySelector(".modal-close");
 
 var form = popup.querySelector("form");
 var login = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
-
+}
 var isStorageSupport = true;
 var storage = "";
 
@@ -18,6 +19,7 @@ try {
   isStorageSupport = false;
 }
 
+if (link) {
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
@@ -29,12 +31,15 @@ link.addEventListener("click", function (evt) {
       login.focus();
     }
 });
+}
 
-close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.remove("modal-show");
-  popup.classList.remote("modal-error");
-});
+if (close) {
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    popup.classList.remote("modal-error");
+  });
+}
 
 form.addEventListener("submit", function (evt) {
   if (!login.value || !email.value) {
@@ -93,24 +98,42 @@ buyClose.addEventListener("click", function (evt) {
 });
 
 //переключение слайдера-сервисы
-var clickService = document.querySelectorAll(".service-item");
+var buttonServices = document.querySelectorAll(".service-item");
 
-var service = document.querySelectorAll(".service-content");
-console.log(service[0], service[1], service[2]);
+var contentServices = document.querySelectorAll(".service-content");
 
-  clickService[1].addEventListener("click", function (evt) {
-    evt.preventDefault();
 
-    clickService[0].classList.remove("service-item--active");
-    service[0].classList.add("slider-item--close");
-    service[0].classList.remove("slider-item--show");
+buttonServices[0].addEventListener("click", function (evt) {
+  //сброс для всех
+  for (var j=0; j<buttonServices.length; j++) {
+      buttonServices[j].classList.remove("service-item--active");
+      contentServices[j].classList.add("slider-item--close");
+  }
 
-    clickService[2].classList.remove("service-item--active");
-    service[2].classList.add("slider-item--close");
-    service[2].classList.remove("slider-item--show");
+   buttonServices[0].classList.add("service-item--active");
+   contentServices[0].classList.remove("slider-item--close");
+});
 
-    service[1].classList.remove("slider-item--close");
-    clickService[1].classList.add("service-item--active");
-    service[1].classList.add("slider-item--show");
-  });
+buttonServices[1].addEventListener("click", function (evt) {
+  //сброс для всех
+  for (var j=0; j<buttonServices.length; j++) {
+      buttonServices[j].classList.remove("service-item--active");
+      contentServices[j].classList.add("slider-item--close");
+  }
+
+   buttonServices[1].classList.add("service-item--active");
+   contentServices[1].classList.remove("slider-item--close");
+});
+
+
+buttonServices[2].addEventListener("click", function (evt) {
+  //сброс для всех
+  for (var j=0; j<buttonServices.length; j++) {
+      buttonServices[j].classList.remove("service-item--active");
+      contentServices[j].classList.add("slider-item--close");
+  }
+
+   buttonServices[2].classList.add("service-item--active");
+   contentServices[2].classList.remove("slider-item--close");
+});
 
