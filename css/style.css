@@ -998,7 +998,7 @@ a .order:active {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans';
   font-size: 13px;
   font-weight: normal;
   line-height: 1.38;
