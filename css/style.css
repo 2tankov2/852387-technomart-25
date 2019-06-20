@@ -621,6 +621,9 @@ color: #000000;
 .name-user::before {
 content: url(../img/icon-user.svg);
 position: absolute;
+background-repeat: no-repeat;
+width: 20px;
+height: 18;
 top: 13px;
 left: 14px;
 }
@@ -1713,6 +1716,9 @@ position: relative;
 .promo__materials::before {
 content: url(../img/icon-pail.svg);
 position: absolute;
+
+width: 44px;
+height: 65px;
 top: 31px;
 right: 42px;
 }
@@ -1731,6 +1737,9 @@ position: relative;
 .promo__tools::before {
 content: url(../img/icon-drill.svg);
 position: absolute;
+
+width: 75;
+height: 61;
 top: 33px;
 right: 27px;
 }
@@ -1743,6 +1752,8 @@ position: relative;
 .promo__technics::before {
 content: url(../img/icon-tractor.svg);
 position: absolute;
+width: 78px;
+height: 62px;
 top: 31px;
 right: 30px;
 }
@@ -1755,6 +1766,8 @@ position: relative;
 .promo__sale::before {
 content: url(../img/icon-basket.svg);
 position: absolute;
+width: 59px;
+height: 72px;
 top: 26px;
 right: 44px;
 }
@@ -1767,6 +1780,8 @@ position: relative;
 .promo__shipping::before {
 content: url(../img/icon-car.svg);
 position: absolute;
+width: 78px;
+height: 63px;
 top: 32px;
 right: 30px;
 }
@@ -1999,7 +2014,7 @@ margin-right: 23px;
 }
 
 .brands-list-items {
-width: 100%;
+width: 940px;
 list-style-type: none;
 display: -webkit-box;
 display: -ms-flexbox;
@@ -2099,6 +2114,7 @@ line-height: 1.85;
 }
 
 .service-slider {
+  width: 940px;
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
@@ -2532,7 +2548,7 @@ border: none;
 
 .modal-close {
 position: absolute;
-top: 7px;;
+top: 7px;
 right: 7px;
 
 width: 22px;
