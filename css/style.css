@@ -1,4 +1,5 @@
 body {
+  min-width: 960px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -11,11 +12,20 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
-  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-header-logo {
@@ -147,7 +157,7 @@ a {
 
 .main-search::placeholder {
   padding: 11px 40px;
-  padding-left: 48px;
+  padding-left: 0;
   line-height: 1.06;
   color: #ffffff;
 }
@@ -628,14 +638,12 @@ a .order:active {
 
 .login-out {
   position: absolute;
-  right: 31px;
-}
-
-.login-out::before {
-  content: url(../img/icon-logout.svg);
-  position: absolute;
-  top: 2px;
-  left: 0;
+  right: 9px;
+  background-image: url(../img/icon-logout.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
 }
 
 .name-user:active {
@@ -725,7 +733,7 @@ a .order:active {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0px;
@@ -1078,7 +1086,7 @@ a .order:active {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 17px;
+  margin-right: 7px;
   padding: 0;
   list-style-type: none;
 }
@@ -1095,7 +1103,7 @@ a .order:active {
 
 .sort-list li:nth-child(3) {
   height: 14px;
-  margin-right: 17px;
+  margin-right: 47px;
 }
 
 .sort-list li:nth-child(4) {
@@ -2445,6 +2453,7 @@ a .order:active {
 .contacts-form textarea:focus,
 .contacts-form textarea:active {
   border-color: #ee3643;
+  outline: none;
 }
 
 .button-wapper {
