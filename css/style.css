@@ -1539,8 +1539,8 @@ a .order:active {
 }
 
 .pagination-item {
-  width: 39px;
-  margin-right: 7px;
+  width: 38px;
+  margin-right: 10px;
 }
 
 .pagination-item:last-child {
@@ -1642,11 +1642,12 @@ a .order:active {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding-bottom: 3px;
 }
 
 .filter-interval input {
   width: 95px;
-  height: 38px;
+  height: 35px;
   border-radius: 2px;
   border: none;
   font: inherit;
