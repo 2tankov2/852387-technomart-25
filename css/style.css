@@ -97,6 +97,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: flex-end;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: 0;
@@ -243,7 +244,7 @@ input[type="radio"].visually-hidden {
 
 .bookmarks {
   position: relative;
-  padding-left: 45px;
+  padding-left: 46px;
   padding-right: 24px;
 }
 
@@ -265,7 +266,7 @@ input[type="radio"].visually-hidden {
 .cart {
   position: relative;
   padding-left: 53px;
-  padding-right: 23px;
+  padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 12px;
 }
@@ -326,7 +327,7 @@ a .order:active {
   letter-spacing: normal;
   color: #ee3643;
   border: solid 3px #ffffff;
-  margin-top: 7px;
+  margin-top: 6px;
   margin-bottom: 0;
   padding: 10px 15px 8px 38px;
 }
@@ -340,7 +341,8 @@ a .order:active {
 .our-address {
   color: #32425c;
   margin-top: 4px;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
+  margin-left: 2px;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -358,7 +360,7 @@ a .order:active {
   font-weight: normal;
   font-style: italic;
   margin-top: 9px;
-  margin-left: 53px;
+  margin-left: 52px;
   color: #ee3643;
 }
 
@@ -552,7 +554,7 @@ a .order:active {
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
-  margin-left: 68px;
+  margin-left: 69px;
 }
 
 .user {
@@ -568,8 +570,9 @@ a .order:active {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  margin-left: 74px;
+  margin-left: 73px;
   margin-right: 0;
+  margin-top: 18px;
 }
 
 .user li {
@@ -583,20 +586,20 @@ a .order:active {
 }
 
 .user a {
-  padding: 10px 25px 11px 24px;
+  padding: 10px 25px 11px 26px;
   background-color: #ffffff;
 }
 
 .user .login-link {
   position: relative;
-  padding-left: 48px;
+  padding-left: 46px;
   margin-right: 10px;
 }
 
 .user svg {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 12px;
+  left: 14px;
 }
 
 .main-with-logo {
