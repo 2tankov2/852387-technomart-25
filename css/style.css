@@ -924,8 +924,8 @@ a .order:active {
   list-style: none;
 }
 
-.footer-social-items li {
-  text-align: center;
+.footer-social-items li:nth-child(3) {
+  width: 42px;
 }
 
 .social-btn {
