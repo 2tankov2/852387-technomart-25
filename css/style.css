@@ -289,8 +289,15 @@ input[type="radio"].visually-hidden {
   opacity: 0.6;
 }
 
+.inner-page .bookmarks {
+  padding-right: 27px;
+  padding-left: 45px;
+}
+
 .inner-page .cart {
   background-color: #ee3643;
+  padding-right: 26px;
+  padding-left: 49px;
 }
 
 .inner-page .cart:hover,
@@ -345,7 +352,6 @@ a .order:active {
   color: #32425c;
   margin-top: 4px;
   margin-bottom: 14px;
-  margin-left: 2px;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -554,7 +560,7 @@ a .order:active {
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
-  margin-left: 69px;
+  margin-left: 68px;
 }
 
 .user {
@@ -619,7 +625,7 @@ a .order:active {
 
 .navigation-contaner {
   position: relative;
-  margin-left: 52px;
+  margin-left: 51px;
   margin-top: 18px;
 }
 
@@ -683,7 +689,7 @@ a .order:active {
   -ms-flex-direction: row;
   flex-direction: row;
   padding: 0;
-  padding-left: 18px;
+  padding-left: 17px;
   margin-top: 19px;
   margin-bottom: 5px;
   list-style-type: none;
@@ -991,7 +997,7 @@ a .order:active {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-top: 23px;
+  margin-top: 21px;
   margin-bottom: 19px;
   list-style-type: none;
 }
@@ -1003,7 +1009,7 @@ a .order:active {
   font-weight: normal;
   line-height: 1.38;
   text-transform: uppercase;
-  margin-right: 41px;
+  margin-right: 40px;
   color: #000000;
 }
 
@@ -1048,6 +1054,7 @@ a .order:active {
   text-transform: uppercase;
   margin: 0;
   margin-top: 21px;
+  margin-bottom: 2px;
   padding: 0;
 }
 
@@ -1160,6 +1167,7 @@ a .order:active {
   border: none;
   border-bottom: 1px solid #f7f3ec;
   margin-right: 0;
+  margin-left: 0;
 }
 
 .filter legend {
@@ -1987,6 +1995,11 @@ a .order:active {
   text-transform: uppercase;
 }
 
+.inner-page .popular-title {
+  margin-top: 32px;
+  margin-bottom: 26px;
+}
+
 .popular-button {
   width: 253px;
   padding-top: 11px;
@@ -2205,7 +2218,7 @@ a .order:active {
 }
 
 .delivery-info {
-  padding-right: 340px;
+  padding-right: 345px;
 }
 
 .delivery-content::before {
