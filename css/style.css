@@ -425,10 +425,9 @@ a .order:active {
 
 .contacts-button {
   width: 300px;
-  margin-top: 36px;
-  margin-left: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-top: 40px;
+  padding-top: 11px;
+  padding-bottom: 9px;
 }
 
 .contacts-item input {
@@ -781,10 +780,9 @@ a .order:active {
 
 .aboutus-button {
   width: 220px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 11px;
+  padding-bottom: 9px;
   margin-top: 37px;
-  margin-left: 1px;
   margin-right: 40px;
 }
 
@@ -850,7 +848,7 @@ a .order:active {
 }
 
 .footer-navigation {
-  width: 546px;
+  width: 548px;
   padding-top: 38px;
 }
 
@@ -881,7 +879,7 @@ a .order:active {
 
 .footer-contacts {
   width: 325px;
-  padding-left: 5px;
+  padding-left: 3px;
   padding-top: 10px;
   color: #f3f7f9;
 }
@@ -906,7 +904,6 @@ a .order:active {
 
 .footer-social-info {
   width: 230px;
-  margin-left: 2px;
 }
 
 .footer-social-items {
@@ -921,8 +918,8 @@ a .order:active {
   justify-content: space-between;
   margin: 0 auto;
   margin-top: 14px;
-  margin-right: 120px;
-  margin-left: 158px;
+  margin-right: 118px;
+  margin-left: 160px;
   padding: 0;
   list-style: none;
 }
@@ -937,7 +934,7 @@ a .order:active {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 42px;
+  width: 40px;
   height: 42px;
   border-radius: 50%;
   background-color: #212a3a;
@@ -2178,7 +2175,7 @@ a .order:active {
 
 .service-content {
   position: relative;
-  padding-left: 82px;
+  padding-left: 81px;
   padding-top: 13px;
 }
 
@@ -2215,7 +2212,7 @@ a .order:active {
 }
 
 .assurance-info {
-  padding-right: 240px;
+  padding-right: 245px;
   margin-bottom: -20px;
 }
 
