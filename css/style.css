@@ -372,7 +372,7 @@ a .order:active {
   font-size: 18px;
   font-weight: normal;
   line-height: 1.11;
-  padding-left: 37px;
+  padding-left: 36px;
   margin-top: 0;
 }
 
@@ -386,7 +386,7 @@ a .order:active {
   position: absolute;
   width: 22px;
   left: -36px;
-  top: 29px;
+  top: 30px;
   border: 1px solid #ee3643;
 }
 
@@ -396,7 +396,6 @@ a .order:active {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase;
-  padding-left: 2px;
   margin-bottom: 15px;
 }
 
@@ -409,7 +408,6 @@ a .order:active {
   font-stretch: normal;
   letter-spacing: normal;
   padding-top: 11px;
-  padding-left: 2px;
   margin-bottom: 0;
 }
 
@@ -1482,7 +1480,7 @@ a .order:active {
   min-height: 20px;
   margin-top: 8px;
   margin-bottom: 5px;
-  margin-left: 9px;
+  margin-left: 6px;
   color: #999;
   text-decoration: line-through;
 }
@@ -1493,7 +1491,7 @@ a .order:active {
   line-height: 1.06;
   width: 80px;
   margin-top: 8px;
-  margin-left: 43px;
+  margin-left: 42px;
   margin-bottom: 20px;
   padding: 10px 30px;
   color: white;
@@ -1997,6 +1995,16 @@ a .order:active {
   margin-right: 24px;
 }
 
+.brands .popular-title {
+  margin-top: 31px;
+}
+
+.brands .popular-button {
+  margin-top: 26px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .brands-list-items {
   width: 940px;
   list-style-type: none;
@@ -2013,7 +2021,7 @@ a .order:active {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 0;
-  margin-top: 21px;
+  margin-top: 20px;
   margin-bottom: 65px;
 }
 
@@ -2046,7 +2054,12 @@ a .order:active {
 
 .brands-item:nth-child(5) a {
   padding-top: 5px;
-  padding-left: 8px;
+  padding-left: 5px;
+}
+
+.brands-item:nth-child(6) a {
+  padding-right: 4px;
+  padding-top: 1px;
 }
 
 .brands-item:nth-child(8) a {
@@ -2077,7 +2090,6 @@ a .order:active {
 }
 
 .service-info {
-  padding-left: 2px;
   margin-bottom: 54px;
 }
 
@@ -2132,9 +2144,9 @@ a .order:active {
   line-height: 1.43;
   color: #ffffff;
   cursor: pointer;
-  padding-left: 23px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-left: 22px;
+  padding-top: 15px;
+  padding-bottom: 17px;
   background-color: #32425c;
   -webkit-box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
   box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
