@@ -97,9 +97,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: 0;
@@ -187,7 +185,6 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   color: #ffffff;
   padding: 20px 30px;
-  margin-right: 1px;
 }
 
 .main-user a {
@@ -752,8 +749,8 @@ a .order:active {
   padding: 0px;
   min-height: 60px;
   background-color: #32425c;
-  padding-left: 22px;
-  padding-right: 0;
+  padding-left: 23px;
+  padding-right: 24px;
   -webkit-box-shadow: inset 0px -5px 0 0 #293449;
   box-shadow: inset 0px -5px 0 0 #293449;
 }
@@ -1362,9 +1359,9 @@ a .order:active {
 
 .catalog-item {
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
-  line-height: 1.24;
+  line-height: 1.11;
   letter-spacing: normal;
   text-align: center;
   font-style: normal;
@@ -1703,7 +1700,7 @@ a .order:active {
   font-weight: bold;
   line-height: 1.25;
   margin-top: 1px;
-  margin-left: 0;
+  margin-left: 2px;
   margin-bottom: 13px;
   color: #ffffff;
 }
@@ -1907,8 +1904,7 @@ a .order:active {
 
 .slider-item h3 {
   margin: 0;
-  margin-top: 1px;
-  margin-left: 24px;
+  margin-left: 26px;
   margin-bottom: 2px;
   font-size: 36px;
   line-height: 1;
@@ -1922,7 +1918,7 @@ a .order:active {
   font-weight: normal;
   line-height: 1.33;
   margin: 0;
-  margin-left: 24px;
+  margin-left: 26px;
   margin-bottom: 122px;
   color: #ffffff;
 }
@@ -1983,7 +1979,7 @@ a .order:active {
   line-height: 1;
   margin-top: 30px;
   margin-bottom: 28px;
-  margin-left: 28px;
+  margin-left: 30px;
   color: #32425c;
   text-transform: uppercase;
 }
@@ -1994,7 +1990,7 @@ a .order:active {
   padding-bottom: 9px;
   margin-top: 25px;
   margin-bottom: 26px;
-  margin-right: 24px;
+  margin-right: 23px;
 }
 
 .brands-list-items {
