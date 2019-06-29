@@ -924,6 +924,10 @@ a .order:active {
   list-style: none;
 }
 
+.footer-social-items li {
+  text-align: center;
+}
+
 .social-btn {
   display: -webkit-box;
   display: -ms-flexbox;
